@@ -11,6 +11,3 @@ function App() {
 }
 
 export default App;
-
-
-// #780FF0

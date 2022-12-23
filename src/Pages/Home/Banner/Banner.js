@@ -26,7 +26,7 @@ const Banner = () => {
                     </select>
                     <div className='w-[2.5px] h-8 bg-neutral opacity-50'></div>
                     <input type="text" placeholder="Type here" className="font-medium text-[17px] focus:outline-none w-full" />
-                    <button type="submit" className='bg-primary px-[30px] py-[15px] text-[17px] font-medium flex justify-center items-center rounded-[10px] gap-[5px] text-white leading-[20px]'>
+                    <button type="submit" className='bg-primary px-[30px] py-[15px] text-[17px] font-medium flex justify-center items-center rounded-[10px] gap-[5px] text-white leading-[20px] hover:bg-primary-focus'>
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                         Search
                     </button>
@@ -38,7 +38,7 @@ const Banner = () => {
                 <motion.div
                     className='h-16 w-16 bg-white rounded-[10px] p-[15px] shadow-2xl absolute'
                     initial={{ left: "-25%", top: "-3%" }}
-                    whileInView={{ left: "-5%" }}
+                    whileInView={{ left: "0" }}
                     transition={transition}
                 >
                     <img src={book} alt="" />
@@ -46,7 +46,7 @@ const Banner = () => {
 
                 <motion.div
                     className='h-16 w-16 bg-white rounded-[10px] p-[15px] shadow-2xl absolute'
-                    initial={{ left: "100%", top: "5%" }}
+                    initial={{ left: "60%", top: "5%" }}
                     whileInView={{ left: "78%" }}
                     transition={transition}
                 >
@@ -64,8 +64,8 @@ const Banner = () => {
 
                 <motion.div
                     className='h-16 w-16 bg-white rounded-[10px] p-[15px] shadow-2xl absolute'
-                    initial={{ right: "-25%", top: "80%" }}
-                    whileInView={{ right: "-2%" }}
+                    initial={{ left: "60%", top: "80%" }}
+                    whileInView={{ left: "85%" }}
                     transition={transition}
                 >
                     <img src={group} alt="" />
